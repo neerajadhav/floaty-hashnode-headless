@@ -33,7 +33,7 @@ export const Navbar = ({ navLinks }: NavbarProps) => {
 
   return (
     <div className='fixed bottom-0 left-0 z-40 flex w-full justify-center md:static lg:bottom-5 lg:w-auto print:hidden'>
-      <nav className='flex w-full flex-row justify-around gap-3 bg-white py-2 dark:bg-black md:justify-center md:gap-5 md:bg-transparent dark:md:bg-transparent lg:w-auto lg:gap-2 lg:rounded-full'>
+      <nav className='flex w-full flex-row justify-around gap-3 border-t bg-white py-3 dark:border-bgDark dark:bg-black md:justify-center md:gap-5 md:border-t-0 md:bg-transparent md:py-2 dark:md:bg-transparent lg:w-auto lg:gap-2 lg:rounded-full'>
         {navLinks.map((navlink) => (
           <Link
             href={navlink.href}

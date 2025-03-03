@@ -40,10 +40,10 @@ const PageSection: React.FC<PageSectionProps> = ({
   }, []);
 
   return (
-    <section className='flex flex-col items-start rounded-xl border bg-white text-gray-950 dark:border-bgDark dark:bg-bgDark/80 dark:text-zinc-300 print:border-0'>
+    <section className='flex flex-col items-start bg-[#f6f6f6] text-gray-950 dark:bg-black/80 dark:text-zinc-300'>
       <div
         ref={headerRef}
-        className={`sticky top-[-0.1px] z-30 flex w-full select-none items-center justify-between gap-2 border-b bg-white transition-all duration-200 dark:border-bgDark dark:bg-bgDark print:hidden ${isSticky ? 'rounded-t-0 rounded-b-xl shadow-md' : 'rounded-t-xl'} ${isBlogArticle ? 'p-3' : 'p-4'}`}
+        className={`sticky top-[-0.1px] z-30 flex w-full select-none items-center justify-between gap-2 border-y border-bgDark bg-[#f6f6f6] transition-all duration-200 dark:bg-black print:hidden ${isSticky ? 'shadow-md' : ''} ${isBlogArticle ? 'p-3' : 'p-4'}`}
       >
         {isBlogArticle && (
           <Link href='/blog'>

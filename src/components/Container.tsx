@@ -4,8 +4,10 @@ interface ContainerProps {
 
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div className='mx-auto flex flex-col gap-2 md:max-w-[1300px] lg:px-4'>
-      {children}
+    <div className='mx-auto flex flex-col md:max-w-[1300px] lg:px-4'>
+      <div className='border-b border-t-0 border-bgDark lg:border-x'>
+        {children}
+      </div>
     </div>
   );
 };

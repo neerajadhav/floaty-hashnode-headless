@@ -8,11 +8,14 @@ import { Skills } from '@/components/Skills';
 export default async function Home() {
   return (
     <Container>
+      <div>
+
       <AboutMe />
       {/* <Skills /> */}
       <Blogs />
       <Projects />
       <ContactMe />
+      </div>
     </Container>
   );
 }

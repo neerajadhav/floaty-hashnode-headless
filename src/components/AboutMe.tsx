@@ -35,10 +35,10 @@ export const AboutMe = () => {
   const availableFor = publication.author?.availableFor || null;
 
   return (
-    <div className='flex flex-col items-center gap-4 rounded-xl border bg-white p-4 py-10 shadow dark:border-0 dark:bg-bgDark'>
+    <div className='flex flex-col items-center gap-4 border-t border-bgDark bg-[#f6f6f6] p-4 py-10 dark:border-0 dark:bg-black'>
       <div className='flex w-full flex-col items-start gap-4 lg:flex-row'>
         {publication.author.profilePicture && (
-          <div className='b mx-auto flex w-2/3 flex-col items-center gap-3 overflow-hidden rounded-xl p-3 sm:max-w-52'>
+          <div className='b mx-auto flex w-2/3 flex-col items-center gap-3 overflow-hidden p-3 sm:max-w-52'>
             <Image
               src={publication.author.profilePicture}
               alt='profile pic'
